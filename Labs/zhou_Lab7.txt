@@ -1,0 +1,408 @@
+/*
+Noah Zhou
+CNIT 272 Fall 2023
+Lab Time: Thurs 7:30 AM - 9:20 AM
+*/
+
+--*********************************************************************************
+--Question 1
+/*
+A) Code and execute a DDL statement which creates a table named S23VENDOR,
+with five attributes: vendorID, name, city, and phone.
+  a. Set the attribute vendorID as the primary key.
+  b. Use reasonable datatypes and sizes, except make the vendorID a fixed
+character with a length of 3.
+B) Using ALTER TABLE, alter the table by adding another attribute – description.
+  Make the description attribute a variable character datatype with a length of 20.
+C) Run a description of the S23VENDOR table (use the DESCRIBE command).
+D) Drop the table.
+*/
+
+--Question 1-A
+CREATE TABLE S23VENDOR
+(
+vendorID char(3),
+Name varchar2(255),
+City varchar2(255),
+Phone varchar2(255),
+CONSTRAINT vendorID_PK PRIMARY KEY(vendorID)
+);
+
+--Question 1-B
+ALTER TABLE S23VENDOR
+ADD Description varchar(20);
+
+--Question 1-C
+DESCRIBE S23VENDOR;
+
+--Question 1-D
+DROP TABLE S23VENDOR;
+
+/*
+Results:
+[Question 1-A]
+Table S23VENDOR created.
+
+[Question 1-B]
+Table S23VENDOR altered.
+
+[Question 1-C]
+Name        Null?    Type
+----------- -------- -------------
+VENDORID    NOT NULL CHAR(3)
+NAME                 VARCHAR2(255)
+CITY                 VARCHAR2(255)
+PHONE                VARCHAR2(255)
+DESCRIPTION          VARCHAR2(20)
+
+[Question 1-D]
+Table S23VENDOR dropped.
+*/
+
+--*********************************************************************************
+--Question 2
+/*
+A) Using one SQL statement, create AND POPULATE a table called S23ZIPCODE
+  containing columns ZipCode, and City. ZipCode should be generated.
+B) Provide the count of the number of rows in the new S23ZipCode table. There
+  should be a count of 8 rows.
+
+--Question 2-A
+CREATE TABLE S23ZIPCODE AS (
+  SELECT ROW_NUMBER() OVER(ORDER BY city) AS zipcode, city
+  FROM (SELECT city
+    FROM worker
+    UNION
+    SELECT supplier_city
+    FROM food_supplier)
+    WHERE city IS NOT NULL
+);
+
+--Question 2-B
+SELECT COUNT (*) FROM S23ZIPCODE;
+
+/*
+Results:
+[Question 2-A]
+Table S23ZIPCODE created.
+
+[Question 2-B]
+COUNT(*)
+----------
+       8
+*/
+
+--*********************************************************************************
+--Question 3
+/*
+A. Create a table named S23PROFESSOR with the following columns and
+  constraints:
+B. Do a DESCRIBE on S23PROFESSOR to confirm your DDL was
+  successful.
+C. To confirm the constraints, list the Constraint_Name, Constraint_Type,
+  Status, and Search_Condition from the USER_CONSTRAINTS Oracle
+  table where the Table_Name = 'S23PROFESSOR'.
+  Display the SQL statement as well as the output.
+  You don’t have to write it, but review the difference between a constraint
+  that you have named versus a constraint that is named automatically by Oracle.
+*/
+--Question 3-A
+CREATE TABLE S23PROFESSOR
+(
+ProfID char(10),
+FirstName varchar2(10),
+LastName varchar2(20),
+DepartmentID char(4) NOT NULL,
+HireDate date,
+BirthDate date,
+Phone char(10),
+Email varchar2(30),
+CONSTRAINT S23PROFESSOR_PK PRIMARY KEY (ProfID),
+CONSTRAINT S23professor_UQ UNIQUE (Email)
+);
+
+--Question 3-B
+DESCRIBE S23PROFESSOR;
+
+--Question 3-C
+SELECT Constraint_Name, Constraint_Type, Status, Search_Condition
+FROM USER_CONSTRAINTS
+WHERE Table_Name = 'S23PROFESSOR';
+
+/*
+Results:
+[Question 3-A]
+Table S23PROFESSOR created.
+
+[Question 3-B]
+Name         Null?    Type
+------------ -------- ------------
+PROFID       NOT NULL CHAR(10)
+FIRSTNAME             VARCHAR2(10)
+LASTNAME              VARCHAR2(20)
+DEPARTMENTID NOT NULL CHAR(4)
+HIREDATE              DATE
+BIRTHDATE             DATE
+PHONE                 CHAR(10)
+EMAIL                 VARCHAR2(30)
+
+[Question 3-C]
+SELECT Constraint_Name, Constraint_Type, Status, Search_Condition
+FROM USER_CONSTRAINTS
+WHERE Table_Name = 'S23PROFESSOR';
+
+CONSTRAINT_NAME     C STATUS   SEARCH_CONDITION
+--------------------- -------- --------------------------------------------------------------------------------
+SYS_C00548047       C ENABLED  "DEPARTMENTID" IS NOT NULL
+S23PROFESSOR_PK     P ENABLED
+S23PROFESSOR_UQ     U ENABLED
+*/
+
+--*********************************************************************************
+--Question 4
+/*
+A) Add a new column named Office to S23PROFESSOR. Use a
+  “VarChar2(10)” datatype.
+B) Describe S23PROFESSOR. (DESCRIBE to show table structure.)
+*/
+--Question 4-A
+ALTER TABLE S23PROFESSOR
+ADD Office varchar2(10);
+
+--Question 4-B
+DESCRIBE S23STUDENT;
+
+/*
+Results:
+[Question 4-A]
+Table S23PROFESSOR altered.
+
+[Question 4-B]
+Name         Null?    Type
+------------ -------- ------------
+PROFID       NOT NULL CHAR(10)
+FIRSTNAME             VARCHAR2(10)
+LASTNAME              VARCHAR2(20)
+DEPARTMENTID NOT NULL CHAR(4)
+HIREDATE              DATE
+BIRTHDATE             DATE
+PHONE                 CHAR(10)
+EMAIL                 VARCHAR2(30)
+OFFICE                VARCHAR2(10)
+*/
+
+--*********************************************************************************
+--Question 5
+/*
+A) Code and execute a DDL statement which creates a table named
+  S23COURSE, with five attributes: CourseID, CourseDescription,
+  CourseSize, StartDate, and EndDate. Set the CourseID as the primary
+  key (pk_S23course). Use reasonable datatypes and sizes, except
+  make the CourseID a fixed character with a length of 10.
+B) Run a description of the table (use the DESCRIBE command).
+*/
+--Question 5-A
+CREATE TABLE S23COURSE
+(
+CourseID char(10),
+CourseDescription varchar2(255),
+CourseSize int,
+StartDate date,
+EndDate date,
+CONSTRAINT S23COURSE_PK Primary Key (CourseID)
+);
+
+--Question 5-B
+DESCRIBE S23COURSE;
+
+/*
+Results:
+[Quesiton 5-A]
+Table S23OURSE created.
+
+[Quesiton 5-B]
+Name              Null?    Type
+----------------- -------- -------------
+COURSEID          NOT NULL CHAR(10)
+COURSEDESCRIPTION          VARCHAR2(255)
+COURSESIZE                 NUMBER(38)
+STARTDATE                  DATE
+ENDDATE                    DATE
+*/
+
+--*********************************************************************************
+--Question 6
+/*
+Add CourseID as a Foreign Key to S23PROFESSOR.
+A) First using ALTER TABLE, add CourseID to S23PROFESSOR using
+  the same datatype and size as in the parent table (S23COURSE).
+B) Second, add a constraint called S23Professor_FK establishing
+  referential integrity between the CourseID in the S23PROFESSOR
+  (child) table and the S23COURSE (parent) table.
+C) Describe S23PROFESSOR.
+*/
+
+--Question 6-A
+ALTER TABLE S23PROFESSOR
+ADD CourseID char(10);
+
+--Question 6-B
+ALTER TABLE S23PROFESSOR
+ADD CONSTRAINT S23PROFESSOR_FK FOREIGN KEY (CourseID) REFERENCES S23COURSE (CourseID);
+
+--Question 6-C
+DESCRIBE S23PROFESSOR;
+
+/*
+Results:
+[Question 6-A]
+Table S23PROFESSOR altered.
+
+[Question 6-B]
+Table S23PROFESSOR altered.
+
+[Question 6-C]
+Name         Null?    Type
+------------ -------- ------------
+PROFID       NOT NULL CHAR(10)
+FIRSTNAME             VARCHAR2(10)
+LASTNAME              VARCHAR2(20)
+DEPARTMENTID NOT NULL CHAR(4)
+HIREDATE              DATE
+BIRTHDATE             DATE
+PHONE                 CHAR(10)
+EMAIL                 VARCHAR2(30)
+OFFICE                VARCHAR2(10)
+COURSEID              CHAR(10)
+*/
+
+--*********************************************************************************
+
+--Question 7
+/*
+Add a check constraint for the DepartmentID attribute in the
+S23PROFESSOR table
+A) Use the CHECK clause to limit the options to CNIT, MGMT, AERO, or CHEM.
+Name the constraint: S23PROFESSOR_DEP_CK
+B) Copy and execute the following statement to check the constraint for
+  Status:
+  Then copy and paste the error result as well as the SQL statement that
+  you just used. You should have an ORA-02290: check constraint
+  violated as an error
+*/
+
+--Question 7-A
+ALTER TABLE S23PROFESSOR
+ADD CONSTRAINT S23PROFESSOR_DEP_CK CHECK (DepartmentID = 'CNIT' OR DepartmentID = 'MGMT' OR DepartmentID = 'AERO' OR DepartmentID = 'CHEM');
+
+--Question 7-B
+INSERT INTO S23professor (profID, DepartmentID) VALUES
+('0123456789','STAT');
+
+/*
+Results:
+[Question 7-A]
+Table S23PROFESSOR altered.
+
+[Question 7-B]
+Error starting at line : 1 in command -
+INSERT INTO S23professor (profID, DepartmentID) VALUES
+('0123456789','STAT')
+Error report -
+ORA-02290: check constraint (ZHOU1170.S23PROFESSOR_DEP_CK) violated
+*/
+
+--*********************************************************************************
+--Question 8
+/*
+Run a SQL statement that displays your userID (USER) and the system
+time stamp (SYSDATE)
+Select the USER and SYSDATE from the DUAL table
+*/
+SELECT user, sysdate
+FROM DUAL;
+
+/*
+Results:
+USER        SYSDATE
+----------- ---------
+ZHOU1170    26-OCT-23
+*/
+
+--*********************************************************************************
+--Question 9
+/*
+A) Using the USER_CONSTRAINTS Oracle table, list the
+  Constraint_Name, Table_Name and Status from the
+  USER_CONSTRAINTS view where the Constraint_Type = 'P' (i.e.,
+  Primary Key). Copy and paste the last ten lines to your document.
+B) List the Constraint_Name, Table_Name, R_Constraint_Name and
+  Status from the USER_CONSTRAINTS view where the
+  Constraint_Type = 'R' (i.e., Foreign Key). The R_Constraint_Name is
+  the parent’s constraint name. Copy and paste the last ten lines to
+  your document.
+*/
+--Question 9-A
+SELECT Constraint_Name, Table_Name, Status
+FROM User_Constraints
+WHERE Constraint_Type = 'P';
+
+--Question 9-B
+SELECT Constraint_Name, Table_Name, R_Constraint_Name, Status
+FROM User_Constraints
+WHERE Constraint_Type = 'R';
+
+/*
+Results:
+[Question 9-A]
+DEPARTMENT_PK                  DEPARTMENT           ENABLED
+FOOD_PK                        FOOD                 ENABLED
+FOOD_SUPPLIER_PK               FOOD_SUPPLIER        ENABLED
+LUNCH_ITEM_PK                  LUNCH_ITEM           ENABLED
+LUNCH_PK                       LUNCH                ENABLED
+S23COURSE_PK                   S23COURSE            ENABLED
+S23PROFESSOR_PK                S23PROFESSOR         ENABLED
+
+CONSTRAINT_NAME                TABLE_NAME           STATUS
+------------------------------ -------------------- --------
+WORKER_PK                      WORKER               ENABLED
+
+23 rows selected.
+
+[Question 9-B]
+CONSTRAINT_NAME          TABLE_NAME               R_CONSTRAINT_NAME          STATUS
+------------------------ ------------------------ -------------------------- --------
+DC_FK                    WORKER                   DEPARTMENT_PK              ENABLED
+FOOD_FK                  LUNCH_ITEM               FOOD_PK                    ENABLED
+LUNCH_FK                 LUNCH_ITEM               LUNCH_PK                   ENABLED
+S23PROFESSOR_FK          S23PROFESSOR             S23COURSE_PK               ENABLED
+SUPPLIER_FK              FOOD                     FOOD_SUPPLIER_PK           ENABLED
+WORKER_FK                LUNCH                    WORKER_PK                  ENABLED
+
+6 rows selected.
+*/
+
+--*********************************************************************************
+--Question 10
+/*
+Drop S23ZIPCODE, S23COURSE, and S23PROFESSOR. Cascade the
+constraints. Show the SQL statement to drop the 3 tables as well as the
+output.
+*/
+DROP TABLE S23ZIPCODE CASCADE CONSTRAINTS;
+DROP TABLE S23COURSE CASCADE CONSTRAINTS;
+DROP TABLE S23PROFESSOR CASCADE CONSTRAINTS;
+
+/*
+Results:
+DROP TABLE S23ZIPCODE CASCADE CONSTRAINTS;
+DROP TABLE S23COURSE CASCADE CONSTRAINTS;
+DROP TABLE S23PROFESSOR CASCADE CONSTRAINTS;
+
+Table S23ZIPCODE dropped.
+
+Table S23COURSE dropped.
+
+Table S23PROFESSOR dropped.
+*/
+--*********************************************************************************

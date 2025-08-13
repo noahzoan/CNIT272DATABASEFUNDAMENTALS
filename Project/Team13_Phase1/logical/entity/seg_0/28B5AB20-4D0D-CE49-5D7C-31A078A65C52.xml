@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28B5AB20-4D0D-CE49-5D7C-31A078A65C52" name="CONDITION">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:45:46 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EligibilityID" id="11962971-0787-E64F-D29D-AA137C5412EF">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:47:06 UTC</createdTime>
+<generatorID>082F1A2A-FC1D-1297-F837-27F39A9B4CD4</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<referedAttribute>5F129447-7AE1-1C6B-E336-A0FA00400BDA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Threshhold " id="EA64DA38-D3D2-9033-531A-935005AD81C0">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:47:48 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Reason" id="C8CA24DD-6E57-945A-099E-2304CF0AD473">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:47:59 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Description" id="62016B25-AD99-34B6-DE1B-5D8E5CEEF778">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:48:04 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="236F7EAD-3C74-984E-B329-02FB1C914201" name="CONDITION PK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:47:45 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>11962971-0787-E64F-D29D-AA137C5412EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

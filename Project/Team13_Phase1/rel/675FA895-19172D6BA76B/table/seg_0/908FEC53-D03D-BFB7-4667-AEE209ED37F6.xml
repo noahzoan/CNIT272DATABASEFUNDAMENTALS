@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="908FEC53-D03D-BFB7-4667-AEE209ED37F6" name="DELETION_REQUEST">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>E9B763EA-112F-6933-07A3-3D82B114C106</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RequestID" id="6A370447-4C5C-5EF4-2AF8-D40B394F139D">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>657FB42B-D094-B5C9-6AF1-881A0C6A193A</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEMBERSHIP_MemberID" id="0CFAE1EC-BA5E-1DB6-935B-B2829EE234D2">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>FD14DD9B-7B7D-9B30-66A2-F20DB70DEA76</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="894C1F74-F712-6EC6-3FB6-1FD17D778284" referredColumn="745A7355-6A6B-EED6-D5BE-9DDEC0F990DF"/>
+</associations>
+</Column>
+<Column name="Reason" id="1295ABBD-A007-28CD-BC6D-08AD3B8B6802">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>13E6D984-BE05-C127-D088-C7AC119D0686</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="47921DA8-53B1-FB21-E446-F64A5BF6AC7E">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>EDA43A7B-2373-A0BA-4F86-56D6CD9EB014</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RequestDate" id="D70E89DE-7550-2F36-A330-ABD71EC63328">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>C2BDE4E0-5E8E-F07C-098C-169C4AE115D3</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02DE4F35-8831-DBD9-6B60-342411741199" name="DELETION_REQUEST_PK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>9C323A86-C8F4-8F76-D713-081190EA64DF</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A370447-4C5C-5EF4-2AF8-D40B394F139D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DE4F671-B26C-CE95-4AB0-769323D230E0" name="DELETION_REQUEST__IDX">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>976E1EC5-DACA-1DF4-C24B-F3E5CF2EE71B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0CFAE1EC-BA5E-1DB6-935B-B2829EE234D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6080AD0A-0B85-465D-8CDF-CF6866100AEF" name="DELETION_REQUEST_MEMBERSHIP_FK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>976E1EC5-DACA-1DF4-C24B-F3E5CF2EE71B</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CFAE1EC-BA5E-1DB6-935B-B2829EE234D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

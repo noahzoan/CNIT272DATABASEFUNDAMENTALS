@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="246F9DE1-0E6B-1BE8-BDDA-EB0CD0BF9DEC" name="ELIGIBILTY">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>CF107584-36FF-9E98-3AA4-629914C2225F</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EligibilityID" id="FC58F454-867D-97A5-62F6-F5E2A14E6C3C">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>5F129447-7AE1-1C6B-E336-A0FA00400BDA</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAN_PlanID" id="3BEDA23C-5162-EA67-B39A-E3E7429A7F57">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>5C48E8E7-4330-2E49-958B-C93A029CDE3E</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="991FA7A6-CFE9-5FAF-6AE6-165217B80379" referredColumn="C73865D6-04D3-156C-75F0-994ADED6E004"/>
+</associations>
+</Column>
+<Column name="Type" id="9E0BE9CE-3AE0-DA89-BA2F-507C57C8D0DA">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>E5B37A4F-537A-DDE9-7865-621F41C1E4E9</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="2CFE2939-869B-B41E-ED5C-C347DBF38AAB">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>5C55F6C5-FF4A-C7A4-FC53-31516F32B368</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9106E84-65D9-AABF-5161-AD8926D837DB" name="ELIGIBILTY_PK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>80FBE1CE-993C-B24C-EB47-7D1EE66A9134</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC58F454-867D-97A5-62F6-F5E2A14E6C3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3E29944-6761-D0B8-FBE0-D6047D458AAC" name="ELIGIBILTY__IDX">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C035CFDE-8336-E7D4-028D-1D79E6A81F5B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3BEDA23C-5162-EA67-B39A-E3E7429A7F57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A70464D8-8C30-7FBE-9381-C4465BB95B0B" name="ELIGIBILTY_PLAN_FK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>C035CFDE-8336-E7D4-028D-1D79E6A81F5B</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BEDA23C-5162-EA67-B39A-E3E7429A7F57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

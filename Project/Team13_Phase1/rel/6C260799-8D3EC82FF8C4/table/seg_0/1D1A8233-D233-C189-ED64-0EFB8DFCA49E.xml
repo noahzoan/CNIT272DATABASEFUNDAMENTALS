@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D1A8233-D233-C189-ED64-0EFB8DFCA49E" name="TRANSFER_REQUEST">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>4CB9D586-6C84-9762-C6E1-82878BC625D9</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TranRequestID" id="A375E9DE-7698-773D-359D-3F2B88CD094D">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>3A8F0433-B7FB-6F52-EDF7-1BBED8305F77</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEMBERSHIP_MemberID" id="F863FCDC-3DF3-94F4-6FF7-9A0C0F640439">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>39DB225D-176C-B393-D870-D08F43018E86</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C94B8AB7-2C10-DBCE-095A-753CB746E9F1" referredColumn="F9DE334E-9A0A-2F94-5101-D36996212B59"/>
+</associations>
+</Column>
+<Column name="SPONSOR_ACCOUNT_SponsorID" id="DA39F592-A928-7FC2-D902-143AF7D881F5">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>D67CE286-1A09-A99B-6D6F-5ED42B0ADC6E</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC2C0649-824B-AA67-D5D5-9DDB7EEDC07D" referredColumn="E44CAC89-3F8A-BDD0-9C1F-C6427917DB00"/>
+</associations>
+</Column>
+<Column name="Reason" id="EB187A99-A507-1D82-164A-726D50309F2A">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>26492A7C-487A-3214-C533-D664942041B2</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="3ACE8E4C-E72F-BB0F-4F98-A73A450E83C0">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>69F026BB-6F75-772C-4342-513D2C15699C</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RequestDate" id="A7319C2D-FC51-4DC8-6A8D-EEB5967CEE61">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>DACA6867-5F23-49B8-9FE5-2259CC2B66A7</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1ED8BDEF-E0DB-B4D5-7323-295CB75E25A9" name="TRANSFER_REQUEST_PK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>815DAC17-3659-DCBB-3FB2-822538EB08BD</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A375E9DE-7698-773D-359D-3F2B88CD094D"/>
+<colUsage columnID="F863FCDC-3DF3-94F4-6FF7-9A0C0F640439"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D693BF2-63A1-7AA4-8AB8-1DB3CDEB2822" name="TRANSFER_REQUEST_SPONSOR_ACCOUNT_FK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>726BC872-B40C-2106-443B-AC9DA188A336</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA39F592-A928-7FC2-D902-143AF7D881F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3D8D577-C125-2C6F-E9A0-4BF351B1B710" name="TRANSFER_REQUEST_MEMBERSHIP_FK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-16 16:47:37 UTC</createdTime>
+<generatorID>227EAD2D-5A4E-420A-FB7E-2EA5A244ACFE</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F863FCDC-3DF3-94F4-6FF7-9A0C0F640439"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

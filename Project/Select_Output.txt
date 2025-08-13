@@ -1,0 +1,218 @@
+/*
+--SELECT Output
+
+Contributors:
+- Brayden Lingelbach
+- Nelig Fernando
+- Noah Zhou
+- Cole Bryant
+*/
+
+
+ADMINID    EMAIL                                                                                                PASSWORD                                                                                             FIRSTNAME                                                                                            LASTNAME                                                                                            
+---------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+0098365944 jebmine@gmail.com                                                                                    gigaPixel209                                                                                         Jeb                                                                                                  Jens                                                                                                
+0083748365 mtgbro2022@yahoo.com                                                                                 marduMan3cmc                                                                                         Jan                                                                                                  Janson                                                                                              
+0064860028 magpie29@gmaill.com                                                                                  tooMuchCoffee19                                                                                      Maggie                                                                                               Rob                                                                                                 
+0039899452 borosboss@hotmail.com                                                                                Artifact92Enchantment                                                                                William                                                                                              Osgir                                                                                               
+0099877650 rakdoscat@gmail.com                                                                                  treasur3G3n3RB                                                                                       Mahadi                                                                                               Whiteclaw                                                                                           
+0077688523 rampagingbrontodon@gmail.com                                                                         3c2gMonGreen                                                                                         Joe                                                                                                  Monogreen                                                                                           
+0012568097 teysakarlov94@gmail.com                                                                              orzhov92Sindicate                                                                                    Teysa                                                                                                Karlov                                                                                              
+0048399274 tokensgalore@hotmail.com                                                                             token2934deck                                                                                        Elspeth                                                                                              Tirel                                                                                               
+0038484738 jayaballard@gmail.com                                                                                lightningboltx5                                                                                      Jaya                                                                                                 Balard                                                                                              
+0048837476 markhovplaneswalker@yahoo.com                                                                        vampire293                                                                                           Sorin                                                                                                Markov                                                                                              
+
+10 rows selected. 
+
+
+SPONSORID  PASSWORD                                                                                             COMPANYLLC                                                                                           COMPANYNAME                                                                                         
+---------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+0000000001 j995NJfqwEo4                                                                                         BrickFilms LCC                                                                                       BrickFilms                                                                                          
+0000000002 33awceg6TRK9                                                                                         Movies@Home LLC                                                                                      Movies@Home                                                                                         
+0000000003 7l3rL589yNn3                                                                                         Univeral LLC                                                                                         Universal Studios                                                                                   
+0000000004 0wBlVb54o9d8                                                                                         Disney LLC                                                                                           Walt Disney Studios                                                                                 
+0000000005 uQw75hv9XC3c                                                                                         A24 LLC                                                                                              A24                                                                                                 
+0000000006 3wGIa6V4Cgnk                                                                                         Happy Maddison LLC                                                                                   Happy Madison                                                                                       
+0000000007 8o53x^#1%C78                                                                                         20th Centry LLC                                                                                      20th Centry Studios                                                                                 
+0000000008 7lRN258ouJDX                                                                                         Warner Bros LLC                                                                                      Warner Bros Studios                                                                                 
+0000000009 3GIT59ZOu6Dc                                                                                         Lionsgate LLC                                                                                        Lionsgate                                                                                           
+0000000010 6p1s3b1yXD2l                                                                                         entertainment@legedary.org                                                                           Legendary LLC                                                                                       
+
+10 rows selected. 
+
+
+IDREQUESTI ADMIN_ACCO REASON                                                                                               REQUESTDA SPONSOR_AC
+---------- ---------- ---------------------------------------------------------------------------------------------------- --------- ----------
+0000000001 0098365944 Brickfilms LLC would like to register for DGAMS                                                      07-DEC-21 0000000001
+0000000002 0083748365 Movies@Home LLC would like to register for DGAMS                                                     23-MAY-20 0000000002
+0000000003 0064860028 Universal LLC would like to register for DGAMS                                                       28-FEB-22 0000000003
+0000000004 0039899452 Disney LLC would like to register for DGAMS                                                          30-SEP-21 0000000004
+0000000005 0099877650 A24 LLC would like to register for DGAMS                                                             17-JUN-20 0000000005
+0000000006 0077688523 Happy Maddison LLC would like to register for DGAMS                                                  03-DEC-21 0000000006
+0000000007 0012568097 20th Centry LLC would like to register for DGAMS                                                     21-JAN-20 0000000007
+0000000008 0048399274 Warner Bros LLC would like to register for DGAMS                                                     04-APR-20 0000000008
+0000000009 0038484738 Lionsgate LLC would like to register for DGAMS                                                       22-JAN-20 0000000009
+0000000010 0048837476 Lengendary LLC would like to register for DGAMS                                                      20-APR-20 0000000010
+
+10 rows selected. 
+
+
+MEMBERID   EMAIL                                                                                                FIRSTNAME                                                                                            LASTNAME                                                                                             PASSWORD                                                                                             PHONENUMBE
+---------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------
+1          jebmine@gmail.com                                                                                    Jeb                                                                                                  Jens                                                                                                 gigaPixel209                                                                                         7653093458
+2          Ryanlove@gmail.com                                                                                   Ryan                                                                                                 Love                                                                                                 RatSky67!                                                                                            3114329471
+3          mtgbro2022@yahoo.com                                                                                 Jan                                                                                                  Jenson                                                                                               marduMan3cmc                                                                                         7654217213
+4          gardengreen@hotmail.com                                                                              Ashley                                                                                               Bright                                                                                               GoatRun@13                                                                                           4126548754
+5          Bigwig@gmail.com                                                                                     John                                                                                                 Nern                                                                                                 HalfLife@2                                                                                           5098766207
+6          RightTurn@hotmail.com                                                                                Brooklyn                                                                                             Wolf                                                                                                 JumpSouth%Next2                                                                                      7214326597
+7          StarsLight@gmail.com                                                                                 Arthur                                                                                               Blanch                                                                                               Ranchman#21                                                                                          7657369085
+8          DavisH@gmail.com                                                                                     Haley                                                                                                Davis                                                                                                Urban#Cow43                                                                                          6315437293
+9          AlyBar@yahoo.com                                                                                     Alyssa                                                                                               Barkely                                                                                              ZebraHu@mmer65                                                                                       1437902901
+10         WestJ@hotmail.com                                                                                    James                                                                                                West                                                                                                 WestCopper21$                                                                                        6317636190
+
+10 rows selected. 
+
+
+MEMREQUEST MEMBERSHIP SPONSOR_AC DESCRIPTION                                                                                          REQUESTDA
+---------- ---------- ---------- ---------------------------------------------------------------------------------------------------- ---------
+0000000001 1          0000000003 Jeb Jens is requesting a membership.                                                                 07-FEB-22
+0000000002 2          0000000002 Ryan Love is requesting a membership.                                                                03-JUN-22
+0000000003 3          0000000007 Jan Jenson is requesting a membership.                                                               12-MAY-22
+0000000004 4          0000000007 Ashly Bright is requesting a membership.                                                             29-JAN-22
+0000000005 5          0000000002 John Nern is requesting a membership.                                                                17-APR-22
+0000000006 6          0000000006 Brocklyn Wolf is requesting a membership.                                                            13-JAN-22
+0000000007 7          0000000005 Artuhur Blanch is requesting a membership.                                                           07-MAR-22
+0000000008 8          0000000010 Haley Davis is requesting a membership.                                                              27-MAY-22
+0000000009 9          0000000009 Alyssa Barkely is requesting a membership.                                                           06-FEB-22
+0000000010 10         0000000004 James West is requesting a membership.                                                               17-JUN-22
+
+10 rows selected. 
+
+
+PAYMENTID  MEMBERSHIP TOTALAMOUN CONTRIBUTI DATERECEI SPONSOR_AC
+---------- ---------- ---------- ---------- --------- ----------
+1          1          10000      100        01-JAN-20 0000000001
+2          2          20000      200        17-MAR-21 0000000002
+2          3          150000     150        30-APR-20 0000000003
+2          4          400000     400        05-MAY-19 0000000004
+2          5          50000      67         08-DEC-20 0000000005
+2          6          25000      100        19-JUN-22 0000000006
+2          7          300000     450        10-SEP-21 0000000007
+2          8          140000     155        02-FEB-20 0000000008
+2          9          60700      142        01-MAY-20 0000000009
+2          10         80000      600        15-OCT-22 0000000010
+
+10 rows selected. 
+
+
+REQUESTID  MEMBERSHIP REASON                                                                                               DESCRIPTION                                                                                          REQUESTDA
+---------- ---------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------
+1          1          Reinstalling                                                                                         System wasent working so reinstalling to see if that fixes it                                        10-MAR-21
+2          2          Not in use                                                                                           Member is not using software anymore                                                                 13-APR-22
+3          3          Not in use                                                                                           Member is not using system anymore                                                                   23-NOV-21
+4          4          Reinstalling                                                                                         Issues with loading so trying to reinstall                                                           03-MAY-22
+5          5          Disatisfied                                                                                          Software dosent meet expected standards                                                              12-APR-22
+6          6          Not in Use                                                                                           No longer a need fo this software                                                                    21-JAN-21
+7          7          Disatisfied                                                                                          Software not what was expected                                                                       14-JUL-21
+8          8          Corrupted files                                                                                      Software caused some files to become corrupted                                                       09-JAN-21
+9          9          Reinstalling                                                                                         First install of software resulted in errors occuring                                                27-OCT-22
+10         10         Disatisfied                                                                                          Software didnt perform as expected from member                                                       23-JUN-22
+
+10 rows selected. 
+
+
+TRANREQUES MEMBERSHIP SPONSOR_AC REASON                                                                                               REQUESTDA
+---------- ---------- ---------- ---------------------------------------------------------------------------------------------------- ---------
+0000000001 1          0000000001 Jeb Jens is requesting a transfer.                                                                   07-JUL-22
+0000000002 2          0000000003 Ryan Love is requesting a transfer.                                                                  03-DEC-22
+0000000003 3          0000000008 Jan Jenson is requesting a transfer.                                                                 12-AUG-22
+0000000004 4          0000000005 Ashly Bright is requesting a transfer.                                                               29-OCT-22
+0000000005 5          0000000005 John Nern is requesting a transfer.                                                                  17-SEP-22
+0000000006 6          0000000004 Brocklyn Wolf is requesting a transfer.                                                              13-NOV-22
+0000000007 7          0000000002 Artuhur Blanch is requesting a transfer.                                                             07-DEC-22
+0000000008 8          0000000009 Haley Davis is requesting a transfer.                                                                27-JUL-22
+0000000009 9          0000000010 Alyssa Barkely is requesting a transfer.                                                             06-SEP-22
+0000000010 10         0000000007 James West is requesting a transfer.                                                                 17-NOV-22
+
+10 rows selected. 
+
+
+PROVIDERID PROVIDERNAME                                                                                         PROVIDERTYPE                                                                                        
+---------- ---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+01         Dental Insurance                                                                                     Dental                                                                                              
+02         Medical Insurance                                                                                    Medical                                                                                             
+03         Home Insurance                                                                                       Home                                                                                                
+04         Renters Insurance                                                                                    Rent                                                                                                
+05         Life Insurance                                                                                       Life                                                                                                
+06         Disability Insurance                                                                                 Disability                                                                                          
+07         Pet Insurance                                                                                        Pet                                                                                                 
+08         Gap Insurance                                                                                        Gap                                                                                                 
+09         Title Insurance                                                                                      Title                                                                                               
+10         Travel Insurance                                                                                     Travel                                                                                              
+
+10 rows selected. 
+
+
+PLANID     PROVIDER_P TYPE                                                                                                 REWARD    
+---------- ---------- ---------------------------------------------------------------------------------------------------- ----------
+P01        01         Dental                                                                                               1000      
+P02        02         Medical                                                                                              10000     
+P03        03         Home                                                                                                 250000    
+P04        04         Rent                                                                                                 100000    
+P05        05         Life                                                                                                 200000    
+P06        06         Disability                                                                                           100000    
+P07        07         Pet                                                                                                  15000     
+P08        08         Gap                                                                                                  5000      
+P09        09         Title                                                                                                200000    
+P10        10         Travel                                                                                               10000     
+
+10 rows selected. 
+
+
+PLANREQUES MEMBERSHIP PLAN_PLANI REASON                                                                                               DESCRIPTION                                                                                          REQUESTDA SPONSOR_AC
+---------- ---------- ---------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- --------- ----------
+1          1          P01        I beleive this plan could improve the current plan.                                                  Plan to change current policys to improve plan benefits.                                             13-JUL-22 0000000001
+2          2          P02        Improve member satisfaction                                                                          Plan requested to improve member satisfaction.                                                       14-FEB-21 0000000002
+3          3          P03        Current plan unsuccessful                                                                            The current plan does not meet standards , and need s to be replace witha better plan.               23-MAR-21 0000000003
+4          4          P04        Another plan is needed                                                                               Another plane is need other than the current one or possibly multiple plans.                         15-AUG-22 0000000004
+5          5          P05        New plan is necessary for improvement                                                                Current plan is outdated, and a new one is requested for increased stisfaction with members.         28-OCT-21 0000000005
+6          6          P06        Disatisfaction among members                                                                         Members have made it clear that the current plan is not working.                                     03-FEB-22 0000000006
+7          7          P07        Members leaving                                                                                      Members are leaving because the current plan is out of date.                                         25-NOV-22 0000000007
+8          8          P08        New plan is necessary to improve the systems in place.                                               A new plan needs to be implmented to improve or change the current policies.                         26-JAN-21 0000000008
+9          9          P09        Annuel request for a updated plan.                                                                   Current plan is updated every 5 to 10 years.                                                         23-APR-21 0000000009
+10         10         P10        Improvements can be made                                                                             Improvements can be made to the current plan to benefit all partys involved.                         11-MAR-21 0000000010
+
+10 rows selected. 
+
+
+ELIGIBILIT PLAN_PLANI TYPE                                                                                                 DESCRIPTION                                                                                         
+---------- ---------- ---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+E01        P01        Dental                                                                                               This plan covers dental fees                                                                        
+E02        P07        Pet                                                                                                  This plan covers pet insurance                                                                      
+E03        P02        Medical                                                                                              This plan covers medical fees                                                                       
+E04        P08        Gap                                                                                                  The plan covers the gap in auto insurance                                                           
+E05        P09        Title                                                                                                This plan covers title insurance                                                                    
+E06        P03        Home                                                                                                 This plan covers home insurance                                                                     
+E07        P04        Rent                                                                                                 This plan covers rent insurance                                                                     
+E08        P05        Life                                                                                                 This plan covers life insurance                                                                     
+E09        P06        Disability                                                                                           This plan covers disability insurance                                                               
+E10        P10        Travel                                                                                               This plan covers travel insurance                                                                   
+
+10 rows selected. 
+
+
+ELIGIBILTY THRESHHOLD                                                                                           REASON                                                                                               DESCRIPTION                                                                                         
+---------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+E01        1000                                                                                                 Dental Is moderately covered                                                                         Dental Insurance                                                                                    
+E02        15000                                                                                                Pet Insurance is covered                                                                             Pet Insurance                                                                                       
+E03        10000                                                                                                Medical Insurance is covered                                                                         Medical Insurance                                                                                   
+E04        5000                                                                                                 Gap Insurance is moderately covered                                                                  Gap Insurance                                                                                       
+E05        200000                                                                                               Title Insurance is covered                                                                           Title Insurance                                                                                     
+E06        250000                                                                                               Home Insurance is covered                                                                            Home Insurance                                                                                      
+E07        100000                                                                                               Rent Insurance is covered                                                                            Renting Insurance                                                                                   
+E08        200000                                                                                               Life Insurance is covered                                                                            Life Insurance                                                                                      
+E09        100000                                                                                               Disability Insurance is covered                                                                      Disability Insurance                                                                                
+E10        10000                                                                                                Travel Insurance is covered                                                                          Travel Insurance                                                                                    
+
+10 rows selected. 
+

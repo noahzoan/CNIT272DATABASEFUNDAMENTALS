@@ -1,0 +1,99 @@
+/*
+--DESCRIBE Output
+
+Contributors:
+- Brayden Lingelbach
+- Nelig Fernando
+- Noah Zhou
+- Cole Bryant
+*/
+
+Name      Null?    Type          
+--------- -------- ------------- 
+ADMINID   NOT NULL CHAR(10)      
+EMAIL              VARCHAR2(100) 
+PASSWORD           VARCHAR2(100) 
+FIRSTNAME          VARCHAR2(100) 
+LASTNAME           VARCHAR2(100) 
+Name        Null?    Type          
+----------- -------- ------------- 
+SPONSORID   NOT NULL CHAR(10)      
+PASSWORD             VARCHAR2(100) 
+COMPANYLLC           VARCHAR2(100) 
+COMPANYNAME          VARCHAR2(100) 
+Name                      Null?    Type          
+------------------------- -------- ------------- 
+IDREQUESTID               NOT NULL CHAR(10)      
+ADMIN_ACCOUNT_ADMINID     NOT NULL CHAR(10)      
+REASON                             VARCHAR2(100) 
+REQUESTDATE                        DATE          
+SPONSOR_ACCOUNT_SPONSORID NOT NULL CHAR(10)      
+Name        Null?    Type          
+----------- -------- ------------- 
+MEMBERID    NOT NULL CHAR(10)      
+EMAIL                VARCHAR2(100) 
+FIRSTNAME            VARCHAR2(100) 
+LASTNAME             VARCHAR2(100) 
+PASSWORD             VARCHAR2(100) 
+PHONENUMBER          CHAR(10)      
+Name                      Null?    Type          
+------------------------- -------- ------------- 
+MEMREQUESTID              NOT NULL CHAR(10)      
+MEMBERSHIP_MEMBERID       NOT NULL CHAR(10)      
+SPONSOR_ACCOUNT_SPONSORID NOT NULL CHAR(10)      
+DESCRIPTION                        VARCHAR2(100) 
+REQUESTDATE                        DATE          
+Name                      Null?    Type         
+------------------------- -------- ------------ 
+PAYMENTID                 NOT NULL CHAR(10)     
+MEMBERSHIP_MEMBERID       NOT NULL CHAR(10)     
+TOTALAMOUNT                        VARCHAR2(10) 
+CONTRIBUTIONRATE                   VARCHAR2(10) 
+DATERECEIVED                       DATE         
+SPONSOR_ACCOUNT_SPONSORID NOT NULL CHAR(10)     
+Name                Null?    Type          
+------------------- -------- ------------- 
+REQUESTID           NOT NULL CHAR(10)      
+MEMBERSHIP_MEMBERID NOT NULL CHAR(10)      
+REASON                       VARCHAR2(100) 
+DESCRIPTION                  VARCHAR2(100) 
+REQUESTDATE                  DATE          
+Name                      Null?    Type          
+------------------------- -------- ------------- 
+TRANREQUESTID             NOT NULL CHAR(10)      
+MEMBERSHIP_MEMBERID       NOT NULL CHAR(10)      
+SPONSOR_ACCOUNT_SPONSORID NOT NULL CHAR(10)      
+REASON                             VARCHAR2(100) 
+REQUESTDATE                        DATE          
+Name         Null?    Type          
+------------ -------- ------------- 
+PROVIDERID   NOT NULL CHAR(10)      
+PROVIDERNAME          VARCHAR2(100) 
+PROVIDERTYPE          VARCHAR2(100) 
+Name                Null?    Type          
+------------------- -------- ------------- 
+PLANID              NOT NULL CHAR(10)      
+PROVIDER_PROVIDERID NOT NULL CHAR(10)      
+TYPE                         VARCHAR2(100) 
+REWARD                       VARCHAR2(10)  
+Name                      Null?    Type          
+------------------------- -------- ------------- 
+PLANREQUESTID             NOT NULL CHAR(10)      
+MEMBERSHIP_MEMBERID       NOT NULL CHAR(10)      
+PLAN_PLANID               NOT NULL CHAR(10)      
+REASON                             VARCHAR2(100) 
+DESCRIPTION                        VARCHAR2(100) 
+REQUESTDATE                        DATE          
+SPONSOR_ACCOUNT_SPONSORID NOT NULL CHAR(10)      
+Name          Null?    Type          
+------------- -------- ------------- 
+ELIGIBILITYID NOT NULL CHAR(10)      
+PLAN_PLANID   NOT NULL CHAR(10)      
+TYPE                   VARCHAR2(100) 
+DESCRIPTION            VARCHAR2(100) 
+Name                     Null?    Type          
+------------------------ -------- ------------- 
+ELIGIBILTY_ELIGIBILITYID NOT NULL CHAR(10)      
+THRESHHOLD                        VARCHAR2(100) 
+REASON                            VARCHAR2(100) 
+DESCRIPTION                       VARCHAR2(100) 

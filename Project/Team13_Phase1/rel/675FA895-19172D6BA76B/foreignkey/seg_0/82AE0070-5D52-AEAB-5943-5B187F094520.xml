@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="82AE0070-5D52-AEAB-5943-5B187F094520" containerWithKeyObject="E4E90008-FC31-535A-8821-ECBFAA1C4F61" localFKIndex="C6004FEB-CA21-20B3-2487-3F2BD8A6194B" name="ID_REQUEST_SPONSOR_ACCOUNT_FK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>7436B3F2-3444-E717-4FE2-E6F5DC8CE316</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<referredTableLongName>SPONSOR_ACCOUNT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5E5EAC52-6B59-EC2F-7F6E-A4CA9FAC3070</referredTableID>
+<keyObject>75A1E243-56D2-171B-F9C9-DC1E4911CC55</keyObject>
+<referredKeyID>75A1E243-56D2-171B-F9C9-DC1E4911CC55</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SponsorID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

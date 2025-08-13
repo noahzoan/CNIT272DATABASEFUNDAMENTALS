@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4ACE28F6-669B-0236-8AD5-834AA2B0839B" containerWithKeyObject="E91F1DA1-160A-DA6A-E2A3-32CE5AA23E79" localFKIndex="BCF16DC7-3233-F23E-6025-97A360A0DFD2" name="CONDITION_ELIGIBILTY_FK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>082F1A2A-FC1D-1297-F837-27F39A9B4CD4</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<referredTableLongName>ELIGIBILTY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>445A02F6-D637-F74D-55D0-826750900230</referredTableID>
+<keyObject>5E31EC20-7556-6A93-B98F-D5C55E58B27E</keyObject>
+<referredKeyID>5E31EC20-7556-6A93-B98F-D5C55E58B27E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>EligibilityID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

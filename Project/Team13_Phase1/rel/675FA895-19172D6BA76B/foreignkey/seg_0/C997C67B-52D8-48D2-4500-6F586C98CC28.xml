@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C997C67B-52D8-48D2-4500-6F586C98CC28" containerWithKeyObject="445A02F6-D637-F74D-55D0-826750900230" localFKIndex="2D184074-FD68-307F-0F10-A9A467F91D29" name="ELIGIBILTY_PLAN_FK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-07 21:05:09 UTC</createdTime>
+<generatorID>C035CFDE-8336-E7D4-028D-1D79E6A81F5B</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<referredTableLongName>PLAN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D15C4FBC-92ED-B7C6-32D6-361208906266</referredTableID>
+<keyObject>1317C15E-C825-1152-4493-B69A8817D11B</keyObject>
+<referredKeyID>1317C15E-C825-1152-4493-B69A8817D11B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PlanID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

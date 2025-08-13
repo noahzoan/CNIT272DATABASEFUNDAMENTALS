@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D1963B5-191A-8B93-BE28-18ACF972C0ED" name="CONTRIBUTION">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:23:18 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PaymentID" id="9DF946E9-5C76-72DB-135D-CB5F2625E18F">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:31:30 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MemberID" id="AB9A7F3F-6551-BFD1-9964-78F907E8F941">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-15 16:13:07 UTC</createdTime>
+<generatorID>46CFE383-6042-B442-A681-33AB9D6CF8D7</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<referedAttribute>503D6B3D-EA54-CFD8-59ED-41F90A80010C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TotalAmount" id="488D9C6D-69C6-6CDD-DAFF-4806FA59B8D4">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:31:36 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,2,7</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ContributionRate" id="8D87C941-6714-D23A-289F-4EBB377E129B">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:31:55 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateReceived" id="5EE47D37-9AE4-08C4-1433-6CB53D1569E1">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:32:05 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SponsorID" id="EABCE688-B835-7221-E1C6-BD6FB783FFAD">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-11-15 16:23:49 UTC</createdTime>
+<generatorID>F511316B-BFC2-B58F-130C-6CC95D68F108</generatorID>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<referedAttribute>E7595DA1-D266-B5BE-424F-4E56D1A420A9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A21735FF-E2F2-C9D4-7D36-B5D3A7B38029" name="PAYMENT PK">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-10-06 18:31:35 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<engineerTo>
+<item key="675FA895-6CC1-A1EF-2E71-19172D6BA76B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9DF946E9-5C76-72DB-135D-CB5F2625E18F</attributeRef>
+<attributeRef>AB9A7F3F-6551-BFD1-9964-78F907E8F941</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

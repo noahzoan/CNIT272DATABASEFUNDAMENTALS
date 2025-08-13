@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Team13_Phase1" id="3D304523-1BA7-F9BD-72E8-D46794962DEB" version="3.5">
+<createdBy>Brayden</createdBy>
+<createdTime>2022-09-30 19:00:52 UTC</createdTime>
+<ownerDesignName>Team13_Phase1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3D304523-1BA7-F9BD-72E8-D46794962DEB</designId>
+</OSDM_Design>
